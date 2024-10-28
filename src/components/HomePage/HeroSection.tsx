@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Button from '../Button';
 
 const HeroSection: React.FC = () => {
   return (
@@ -17,13 +18,13 @@ const HeroSection: React.FC = () => {
           </p>
 
           <div className='flex items-center gap-x-4 sm:gap-x-10'>
-            <button className='h-10 w-full rounded-full border-2 border-secondary-background bg-secondary-background text-xs font-bold uppercase tracking-widest text-white shadow-cta-button transition-all duration-200 hover:border-white hover:bg-primary-background hover:text-black focus:outline-none focus:ring focus:ring-secondary-background focus:ring-offset-2 sm:h-12 sm:w-60 sm:text-sm'>
+            <Button className='border-secondary-background bg-secondary-background text-white hover:border-white hover:bg-primary-background hover:text-black focus:ring-secondary-background'>
               Register Now
-            </button>
+            </Button>
 
-            <button className='h-10 w-full rounded-full border-2 border-white bg-primary-background text-xs font-bold uppercase tracking-widest text-black shadow-cta-button transition-all duration-200 hover:border-secondary-background hover:bg-secondary-background hover:text-white focus:outline-none focus:ring focus:ring-secondary-background focus:ring-offset-2 sm:h-12 sm:w-60 sm:text-sm'>
+            <Button className='border-white bg-primary-background text-black hover:border-secondary-background hover:bg-secondary-background hover:text-white focus:ring-secondary-background'>
               Get a Quote
-            </button>
+            </Button>
           </div>
         </div>
 

@@ -11,15 +11,41 @@
 }
 
 @layer components {
-  /* ---------------- Hero Child Circle 1 ---------------- */
+  /* ---------------- Hero Child Circles ---------------- */
 
   .hero-child-circle-1 {
     transform: rotate(135deg) translate(-145px);
   }
 
+  .hero-child-circle-2 {
+    transform: rotate(225deg) translate(-145px);
+  }
+
+  .hero-child-circle-3 {
+    transform: rotate(315deg) translate(-145px);
+  }
+
+  .hero-child-circle-4 {
+    transform: rotate(45deg) translate(-145px);
+  }
+
+  /* ----------------- Media Queries ----------------- */
+
   @media (min-width: 640px) {
     .hero-child-circle-1 {
       transform: rotate(135deg) translate(-200px);
+    }
+
+    .hero-child-circle-2 {
+      transform: rotate(225deg) translate(-200px);
+    }
+
+    .hero-child-circle-3 {
+      transform: rotate(315deg) translate(-200px);
+    }
+
+    .hero-child-circle-4 {
+      transform: rotate(45deg) translate(-200px);
     }
   }
 
@@ -27,81 +53,33 @@
     .hero-child-circle-1 {
       transform: rotate(54deg) translate(-200px);
     }
-  }
 
-  @media (min-width: 1024px) {
-    .hero-child-circle-1 {
-      transform: rotate(54deg) translate(-265px);
-    }
-  }
-
-  /* ---------------- Hero Child Circle 2 ---------------- */
-
-  .hero-child-circle-2 {
-    transform: rotate(225deg) translate(-145px);
-  }
-
-  @media (min-width: 640px) {
-    .hero-child-circle-2 {
-      transform: rotate(225deg) translate(-200px);
-    }
-  }
-
-  @media (min-width: 768px) {
     .hero-child-circle-2 {
       transform: rotate(18deg) translate(-200px);
     }
-  }
 
-  @media (min-width: 1024px) {
-    .hero-child-circle-2 {
-      transform: rotate(18deg) translate(-265px);
-    }
-  }
-
-  /* ---------------- Hero Child Circle 3 ---------------- */
-
-  .hero-child-circle-3 {
-    transform: rotate(315deg) translate(-145px);
-  }
-
-  @media (min-width: 640px) {
-    .hero-child-circle-3 {
-      transform: rotate(315deg) translate(-200px);
-    }
-  }
-
-  @media (min-width: 768px) {
     .hero-child-circle-3 {
       transform: rotate(-18deg) translate(-200px);
     }
-  }
 
-  @media (min-width: 1024px) {
-    .hero-child-circle-3 {
-      transform: rotate(-18deg) translate(-265px);
-    }
-  }
-
-  /* ---------------- Hero Child Circle 4 ---------------- */
-
-  .hero-child-circle-4 {
-    transform: rotate(45deg) translate(-145px);
-  }
-
-  @media (min-width: 640px) {
-    .hero-child-circle-4 {
-      transform: rotate(45deg) translate(-200px);
-    }
-  }
-
-  @media (min-width: 768px) {
     .hero-child-circle-4 {
       transform: rotate(-54deg) translate(-200px);
     }
   }
 
   @media (min-width: 1024px) {
+    .hero-child-circle-1 {
+      transform: rotate(54deg) translate(-265px);
+    }
+
+    .hero-child-circle-2 {
+      transform: rotate(18deg) translate(-265px);
+    }
+
+    .hero-child-circle-3 {
+      transform: rotate(-18deg) translate(-265px);
+    }
+
     .hero-child-circle-4 {
       transform: rotate(-54deg) translate(-265px);
     }
