@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  /* ---------------- Hero Child Circle 1 ---------------- */
+
+  .hero-child-circle-1 {
+    transform: rotate(135deg) translate(-145px);
+  }
+
+  @media (min-width: 640px) {
+    .hero-child-circle-1 {
+      transform: rotate(135deg) translate(-200px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-child-circle-1 {
+      transform: rotate(54deg) translate(-200px);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-child-circle-1 {
+      transform: rotate(54deg) translate(-265px);
+    }
+  }
+
+  /* ---------------- Hero Child Circle 2 ---------------- */
+
+  .hero-child-circle-2 {
+    transform: rotate(225deg) translate(-145px);
+  }
+
+  @media (min-width: 640px) {
+    .hero-child-circle-2 {
+      transform: rotate(225deg) translate(-200px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-child-circle-2 {
+      transform: rotate(18deg) translate(-200px);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-child-circle-2 {
+      transform: rotate(18deg) translate(-265px);
+    }
+  }
+
+  /* ---------------- Hero Child Circle 3 ---------------- */
+
+  .hero-child-circle-3 {
+    transform: rotate(315deg) translate(-145px);
+  }
+
+  @media (min-width: 640px) {
+    .hero-child-circle-3 {
+      transform: rotate(315deg) translate(-200px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-child-circle-3 {
+      transform: rotate(-18deg) translate(-200px);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-child-circle-3 {
+      transform: rotate(-18deg) translate(-265px);
+    }
+  }
+
+  /* ---------------- Hero Child Circle 4 ---------------- */
+
+  .hero-child-circle-4 {
+    transform: rotate(45deg) translate(-145px);
+  }
+
+  @media (min-width: 640px) {
+    .hero-child-circle-4 {
+      transform: rotate(45deg) translate(-200px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-child-circle-4 {
+      transform: rotate(-54deg) translate(-200px);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-child-circle-4 {
+      transform: rotate(-54deg) translate(-265px);
+    }
+  }
+
+  /* ---------------- Solution sections cards ---------------- */
+
+  #cards {
+    display: grid;
+    gap: 8px;
+  }
+
+  #solution-container {
+    background: transparent;
+    display: flex;
+    height: 100%;
+    min-height: 100px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  #solution-container > .container-inner {
+    background: transparent;
+    margin: 2px;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    z-index: 3;
+  }
+
+  @media (min-width: 1024px) {
+    #solution-container {
+      background: linear-gradient(120deg, #fff 30%, #959391 100%);
+    }
+
+    #solution-container > .container-inner {
+      background: #ebecf0;
+    }
+  }
+
+  .card {
+    background: linear-gradient(160deg, #fff 40%, #959391 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    min-height: 100px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .card::before {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), #959391, #fff 40%);
+    border-radius: inherit;
+    content: '';
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 500ms;
+    z-index: 2;
+  }
+
+  .card:hover {
+    background: transparent;
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+
+  .card > .card-content {
+    background: linear-gradient(to right, #e0e1e6, #ebecf0);
+    border-radius: 9px;
+    margin: 2px;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    z-index: 3;
+    padding: 40px;
+  }
+}
